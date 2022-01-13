@@ -1,0 +1,17 @@
+{
+  "name": "yt-downloader",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "dhoniaridho",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "ffmpeg": "^0.0.4",
+    "ytdl-core": "^4.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
