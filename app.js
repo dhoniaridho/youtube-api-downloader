@@ -3,7 +3,7 @@ const app = express();
 const ytdl = require('ytdl-core');
 const cors = require('cors')
 
-app.use(cors({ origin: '*' }))
+app.use(cors())
 
 
 app.listen(3333, () => {
