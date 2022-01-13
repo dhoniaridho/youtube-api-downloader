@@ -2,12 +2,15 @@ const express = require('express');
 const app = express();
 const ytdl = require('ytdl-core');
 const cors = require('cors')
+const dotEnv = require('dotenv')
+
+dotEnv.config()
 
 app.use(cors())
 
 
-app.listen(3333, () => {
-    console.log('server started');
+app.listen(process.env.PORT || 80, () => {
+    console.log(`server started at port ${process.env.PORT||80}`);
 })
 
 app.get('/api/stream/medata', async (req, res) => {
